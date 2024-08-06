@@ -1,0 +1,59 @@
+.product-list {
+  /* height: 100vh; */
+  display: grid;
+  margin: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: min-content;
+  gap: 20px;
+  padding: 20px;
+  /* overflow-y: auto;
+  overflow-x: hidden; */
+  background-color: rgb(230, 230, 230);
+  border-radius: 30px;
+}
+.product-item div{
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  border: 5px solid rgb(246, 246, 246);
+}
+
+.sort-btn{
+  width: 150px;
+  margin: 10px;
+  border-radius: 10px;
+  border: 2px solid rgba(128, 128, 128, 0.347);
+}
+
+.product-item .btn-grp{
+  display: flex;
+  justify-content: center;
+  border:none;
+}
+.product-item .btn-grp button{
+  width: 100px;
+  height: 40px;
+  margin: 5px 0;
+  font-size: .8rem;
+  transition: .3s ease-in-out;
+
+}
+.product-item .btn-grp button:nth-child(1){
+  border-top-left-radius: 20px; 
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 0px; 
+  border-bottom-right-radius: 0px;
+}
+.product-item .btn-grp button:nth-child(3){
+  border-top-right-radius: 20px; 
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 0px; 
+  border-bottom-left-radius: 0px;
+}
+.product-item .btn-grp button:nth-child(3):hover{
+  background-color: orange;
+  color: black;
+  border-color: orange;
+}
+.product-item .btn-grp button:nth-child(2){
+  border-radius: 0;
+}
