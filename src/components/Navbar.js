@@ -13,7 +13,7 @@ const Navbar = () => {
       <div className="container-fluid">
         <Link className="navbar-brand" to="/">
           <img src={logo} alt="E-commerce Logo" height="100" className=" align-top me-2 rounded-circle mx-5" />
-          <h1>E-Commerce Generic Name</h1>
+          <h1>E-Commerce</h1>
         </Link>
         <div className="navbar-nav">
           <Link className="nav-link" to="/">Home</Link>
