@@ -22,8 +22,10 @@ const ProductForm = ({ product, onSubmit }) => {
         await dispatch(addProductAsync(formData)).unwrap();
       }
       // onSubmit && onSubmit();
-      //goto home page
-      window.location.href = '/';
+      //goto home page after 1 seconds
+      setTimeout(() => {
+        window.location.href = '/';
+      }, 1000);
     } catch (error) {
       notifyError('Failed to save product');
     } 

@@ -1,5 +1,9 @@
 import { toast } from 'react-toastify';
 
-export const notifySuccess = (message) => toast.success(message);
-export const notifyError = (message) => toast.error(message);
-export const notifyInfo = (message) => toast.info(message);
+const toastOptions = {
+  autoClose: 500 // 500 milliseconds = 0.5 seconds
+};
+
+export const notifySuccess = (message) => toast.success(message, toastOptions);
+export const notifyError = (message) => toast.error(message, toastOptions);
+export const notifyInfo = (message) => toast.info(message, toastOptions);
