@@ -17,7 +17,8 @@ const Navbar = () => {
         </Link>
         <div className="navbar-nav">
           <Link className="nav-link" to="/">Home</Link>
-          <Link className="nav-link" to="/products">Products</Link>
+          {/* <Link className="nav-link" to="/products">Products</Link> */}
+          <Link className="nav-link" to="/add-product">Add Product</Link>
           <Link className="nav-link" to="/cart">
             Cart <span className="badge bg-primary">{cartItemsCount}</span>
           </Link>

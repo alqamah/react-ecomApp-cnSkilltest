@@ -16,7 +16,7 @@ function App() {
         <div className="container mt-4">
           <Routes>
             <Route path="/" element={<ProductList />} />
-            <Route path="/products" element={<ProductList />} />
+            {/* <Route path="/products" element={<ProductList />} /> */}
             <Route path="/cart" element={<Cart />} />
             <Route path="/add-product" element={<ProductForm />} />
           </Routes>

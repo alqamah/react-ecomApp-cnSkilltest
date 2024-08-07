@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { addProductAsync, updateProductAsync } from '../redux/productsSlice';
 import { notifyError } from '../utils/notifications';
+import  '../styles/ProductForm.css';
 
 
 const ProductForm = ({ product, onSubmit }) => {
@@ -21,13 +22,15 @@ const ProductForm = ({ product, onSubmit }) => {
         await dispatch(addProductAsync(formData)).unwrap();
       }
       onSubmit && onSubmit();
+      //goto home page
+      window.location.href = '/';
     } catch (error) {
       notifyError('Failed to save product');
-    }
+    } 
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className='product-form' onSubmit={handleSubmit}>
       <input
         name="name"
         value={formData.name}
