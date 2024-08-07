@@ -21,7 +21,7 @@ const ProductForm = ({ product, onSubmit }) => {
       } else {
         await dispatch(addProductAsync(formData)).unwrap();
       }
-      onSubmit && onSubmit();
+      // onSubmit && onSubmit();
       //goto home page
       window.location.href = '/';
     } catch (error) {
