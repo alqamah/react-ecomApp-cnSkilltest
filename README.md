@@ -5,6 +5,8 @@ This is the frontend application for our e-commerce platform. It's built using R
 ## Live Link
 https://react-ecomapp-cnskilltest.onrender.com 
 
+## Coding Ninjas Skill Test for React
+
 ## Features
 
 - Responsive navbar with logo and navigation links
